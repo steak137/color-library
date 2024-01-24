@@ -12,5 +12,5 @@ auto main() -> int {
 	std::cin >> r;
 	std::cin >> g;
 	std::cin >> b;
-	std::cout << color(r, g, b) << "Colored World" << color(255, 255, 255) << std::endl;
+	std::cout << color(r, g, b) << "Colored World" << ~color() << std::endl;
 }
