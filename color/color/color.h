@@ -14,7 +14,7 @@ public:
 		return os << fmt::format("\x1B[38;2;{};{};{}m", color.r_, color.g_, color.b_);
 	}
 	~color() {}
-	friend std::ostream& operator<<(std::ostream& os,) {
+	friend std::ostream& operator<<(std::ostream& os) {
 		return os << fmt::format("\x1B[38;2;255;255;255m");
 	}
 private:
