@@ -13,6 +13,10 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, const color& color) {
 		return os << fmt::format("\x1B[38;2;{};{};{}m", color.r_, color.g_, color.b_);
 	}
+	~color() {}
+	friend std::ostream& operator<<(std::ostream& os,) {
+		return os << fmt::format("\x1B[38;2;255;255;255m");
+	}
 private:
 	int r_, g_, b_;
 };
